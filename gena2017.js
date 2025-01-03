@@ -96,11 +96,11 @@ const confetti = document.getElementById('confetti');
 
         startButton.addEventListener('click', () => {
             startButton.style.display = 'none';
-            message.textContent = 'እንኳን ለ2017 የገና በዓል በሰላም በጤና አደረሰህ!';
+            message.textContent = 'እንኳን ለ2017 የገና በዓል በሰላም በጤና አደረሰህ/ሽ!';
             message.style.opacity = '1';
             photoContainer.style.width = '300px';
             photoContainer.style.height = '300px';
-            messageTwo.textContent = 'በዓሉ የሰላም የፍቅር የጤና ይሁንልሽ!';
+            messageTwo.textContent = 'በዓሉ የሰላም የፍቅር የጤና ይሁንልሽ/ህ!';
             messageTwo.style.opacity = '1';
             setTimeout(() => {
                 changePhoto();
