@@ -100,7 +100,7 @@ const confetti = document.getElementById('confetti');
             message.style.opacity = '1';
             photoContainer.style.width = '300px';
             photoContainer.style.height = '300px';
-            messageTwo.textContent = 'በዓሉ የሰላም የፍቅር የጤና ይሁንልሽ/ህ!';
+            messageTwo.textContent = 'በዓሉ የሰላም የፍቅር የጤና ይሁንልህ/ሽ!';
             messageTwo.style.opacity = '1';
             setTimeout(() => {
                 changePhoto();
