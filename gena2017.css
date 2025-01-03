@@ -1,0 +1,89 @@
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #0a0a2a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        #confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .container {
+            text-align: center;
+            z-index: 2;
+        }
+        #startButton {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #startButton:hover {
+            background-color: #45a049;
+        }
+        #message,#message2 {
+            font-size: 2em;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 1s;
+            font-family: 'Pacifico', cursive;
+            color: #FFD700;
+            text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #FF0000, 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000;
+            }
+            to {
+                text-shadow: 0 0 20px #FF0000, 0 0 30px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000, 0 0 60px #FF0000;
+            }
+        }
+        #photoContainer {
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            overflow: hidden;
+            position: relative;
+            transition: width 1s, height 1s;
+        }
+        #photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 0.5s;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        @media (max-width: 600px) {
+            #message {
+                font-size: 1.5em;
+            }
+            #photoContainer {
+                max-width: 300px;
+                max-height: 300px;
+            }
+        }
+        
+        #message2{
+          font-size:1.5em;
+        }
